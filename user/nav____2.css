@@ -1,0 +1,432 @@
+.side-notification {
+    position: fixed;
+    top: 50%;
+    right: -300px; /* Initially positioned outside the viewport */
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease, right 0.3s ease; /* Smooth transition for opacity and position */
+}
+
+.side-notification p {
+    margin-bottom: 10px;
+}
+
+.side-notification button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.side-notification button:hover {
+    background-color: #f0f0f0;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+
+
+
+
+
+
+.main_user {
+    position: absolute;
+    /* display: flex; */
+    /* align-items: self-end; */
+    top: 1rem;
+    margin-left: -5rem;
+}
+
+
+.user_info
+{
+    padding: 0px;
+    position: absolute;
+    top: -.5rem;
+    color: #fff;
+}
+
+.profile_picture {
+    position: absolute;
+    height: 8vh;
+    top: -.6rem;
+    left: 5rem;
+    border-radius: 40rem;
+}
+
+#dropdownMenu
+{
+    background: #d1a75b;
+    position: absolute;
+    top: 3.5rem;
+}
+
+
+@media screen and (max-width:1090px){
+    .main_user {
+        position: absolute;
+        /* display: flex; */
+        /* align-items: self-end; */
+        top: 1rem;
+        margin-left: -3rem;
+    }
+}
+
+
+
+@media screen and (max-width:890px) {
+    nav
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: first baseline;
+        height: 10vh;
+        position: relative;
+        top: .5rem;
+        padding: .1rem 1rem;
+    }
+
+
+    .logo
+{
+    display: flex;
+    align-items: first baseline;
+    color: #fff;
+    position: relative;
+}
+
+.main_part
+{
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+}
+    .main_part ul
+    {
+        display: block;
+    background: #00000060;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    border-radius: .5rem;
+    position: relative;
+    /* left: -5remrem; */
+    /* top: 2rem; */
+    top: -100rem;
+    line-height: 2.5rem;
+    opacity: 0;
+    }
+
+    .side_part
+{
+    background: #00000000;
+    display: flex;
+    align-items: baseline;
+    border-radius: 100rem;
+    position: relative;
+}
+
+#menu_btn
+{
+  display: block;  
+  color: #fff;
+  font-size: 1.8rem;
+  position: relative;
+  width: 3.5rem;
+  border-radius: .5rem;
+  top: .4rem;
+  left: 11rem;
+  cursor: pointer;
+  transition: opacity 0.3s, top 0.3s;
+  background: #d1a75b;
+  padding: 1rem;
+}
+
+.user_info {
+    padding: 0px;
+    position: relative;
+    top: 0.8rem;
+    color: #fff;
+}
+
+.main_user {
+    position: relative;
+    /* display: flex; */
+    /* align-items: self-end; */
+    top: -.6rem;
+    cursor: pointer;
+    margin-left: -2rem;
+}
+}
+
+
+@media screen and (max-width:825px)
+{
+    #menu_btn
+{
+  display: block;  
+  color: #fff;
+  font-size: 1.8rem;
+  position: relative;
+  /* width: 2rem; */
+  top: .4rem;
+  left: 10rem;
+  cursor: pointer;
+  transition: opacity 0.3s, top 0.3s;
+}
+}
+
+
+@media screen and (max-width:715px)
+{
+    #dropdownMenu {
+        background: #d1a75b;
+        position: absolute;
+        top: 3.5rem;
+        left: -3rem;
+    }
+    
+}
+
+
+@media screen and (max-width:645px)
+{
+    #menu_btn
+{
+  display: block;  
+  color: #fff;
+  font-size: 1.8rem;
+  position: relative;
+  /* width: 2rem; */
+  top: .4rem;
+  left: 9rem;
+  cursor: pointer;
+  transition: opacity 0.3s, top 0.3s;
+}
+.main_user {
+    position: relative;
+    /* display: flex; */
+    /* align-items: self-end; */
+    top: -.6rem;
+    cursor: pointer;
+    margin-left: -5rem;
+}
+
+.main_part ul
+    {
+        display: block;
+    background: #00000060;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    border-radius: .5rem;
+    position: relative;
+    /* left: 5rem; */
+    /* top: 2rem; */
+    top: -100rem;
+    line-height: 2.5rem;
+    opacity: 0;
+    }
+
+    #dropdownMenu {
+        background: #d1a75b;
+        position: absolute;
+        top: 3.5rem;
+        left: -7rem;
+    }
+}
+
+
+@media screen and (max-width:570px)
+{
+    #menu_btn
+{
+  display: block;  
+  color: #fff;
+  font-size: 1.8rem;
+  position: relative;
+  /* width: 2rem; */
+  top: .4rem;
+  left: 8rem;
+  cursor: pointer;
+  transition: opacity 0.3s, top 0.3s;
+}
+
+.main_user {
+    position: relative;
+    /* display: flex; */
+    /* align-items: self-end; */
+    top: -.6rem;
+    cursor: pointer;
+    margin-left: -6rem;
+}
+
+.logo h3
+
+    {
+        width: 7rem !important;
+   
+}
+}
+
+
+
+@media screen and (max-width:500px)
+{
+    #menu_btn
+    {
+      display: block;  
+      color: #fff;
+      font-size: 1.8rem;
+      position: relative;
+      /* width: 2rem; */
+      top: .4rem;
+      /* left: 6rem; */
+      cursor: pointer;
+      transition: opacity 0.3s, top 0.3s;
+    }
+
+    #dropdownMenu {
+        background: #d1a75b;
+        position: absolute;
+        top: 3.5rem;
+        left: -8rem;
+    }
+
+    .main_part
+{
+    position: absolute;
+    top: 5rem;
+    right: 0rem;
+}
+}
+
+
+/* essay
+ */
+
+.time
+{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+ #name
+ {
+    background: #202020;
+        color: #fff;
+        display: inline-block;
+        width: 79%;
+        padding: 18px 36px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        height: 70px;
+        margin-top: 18px;
+        border-radius: 20px;
+        border: 2px solid #d1a75b;
+        box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+ }
+
+ #email
+ {
+    background: #202020;
+        color: #fff;
+        display: inline-block;
+        width: 79%;
+        padding: 18px 36px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        height: 70px;
+        margin-top: 18px;
+        border-radius: 20px;
+        border: 2px solid #d1a75b;
+        box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+ }
+
+
+ #essay
+ {
+    background: #202020;
+        color: #fff;
+        display: inline-block;
+        width: 79%;
+        padding: 18px 36px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        height: auto;
+        margin-top: 18px;
+        border-radius: 20px;
+        border: 2px solid #d1a75b;
+        box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+ }
+
+ #name:focus
+  {
+    outline: none;
+  }
+
+  #essay:focus
+  {
+    outline: none;
+  }
+
+  #email:focus
+  {
+    outline: none;
+  }
+
+  #startButton
+  {
+    /* margin-left: -160px; */
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #d1a75b;
+    color: #fff;
+  }
+
+  #submitButton
+  {
+     /* margin-left: -160px; */
+     font-size: 16px;
+     display: inline-block;
+     font-weight: 600;
+     padding: 14px 30px;
+     border-radius: 20px;
+     border: none;
+     cursor: pointer;
+     background-color: #d1a75b;
+     color: #fff;
+  }
+
+  .highscore
+  {
+    color: #fff;
+  }

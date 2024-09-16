@@ -1,0 +1,185 @@
+#toggleAsideBtn
+{
+    display: none !important;
+}
+
+
+@media screen and (max-width:991px) {
+    .image_sec1
+    img
+    {
+        height: 40vh;
+    }
+
+    .heading_sec1 {
+        color: #ffa600f9;
+        text-align: start;
+        font-size: 2rem;
+    }
+
+    .para_sec1 {
+        text-align: start;
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:930px) {
+    .col
+{
+    width: 30vw;
+}
+.row_books
+{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:900px) {
+    .col
+{
+    width: 35vw;
+}
+.row_books
+{
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+@media screen and (max-width:768px) {
+    
+
+.mid_sec1 {
+    display: grid;
+    place-items: center;
+}
+
+.text_sec1 {
+    width: 70%;
+    height: 45vh;
+    background: #00000000;
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(0px 0px 10px black);
+    position: relative;
+    top: 6rem;
+    padding: 1rem 2rem;
+}
+
+.image_sec1 {
+    position: relative;
+    top: 5rem;
+}
+
+.image_sec1
+img
+{
+    height: 40vh;
+
+}
+
+.sec_car1_cont {
+    display: block !important;
+    position: relative;
+    top: 1rem;
+}
+}
+
+
+
+@media screen and (max-width:660px) {
+    .col
+{
+    width: 38vw;
+}
+.row_books
+{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:550px) {
+    .col
+{
+    width: 50vw;
+}
+.row_books
+{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:790px)
+{
+    .aside_genre
+    {
+        display: none;
+        z-index: 1;
+    }
+    #toggleAsideBtn
+    {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:991px)
+{
+    .main_2 {
+        display: grid;
+        place-items: center;
+    }
+
+    .book_main_cont {
+        margin-top: 2rem;
+        background: #d1a85b9f;
+        padding: 5rem 3rem;
+        backdrop-filter: blur(10px);
+        color: #fff;
+        height: auto;
+    }
+    .main_text {
+        position: relative;
+        left: 0rem;
+        top: 3rem;
+    }
+
+    .main_img
+    img
+    {
+        height: 70vh;
+    }
+    .bt {
+        margin-left: -160px;
+        font-size: 16px;
+        display: inline-block;
+        font-weight: 600;
+        padding: 7px 25px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        background-color: #d1a75b;
+        color: #fff;
+    }
+    .letter_input[type="email"] {
+        background: #202020;
+        color: #fff;
+        display: inline-block;
+        width: 79%;
+        padding: 18px 36px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        height: 70px;
+        margin-top: 18px;
+        border-radius: 20px;
+        border: 2px solid #d1a75b;
+        box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+    }
+}
+

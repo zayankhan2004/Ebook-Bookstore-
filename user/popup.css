@@ -1,0 +1,157 @@
+    /* Add this CSS to style the popup */
+    .popup_card
+        {
+            width: 11rem !important;
+            margin-right: 2.5rem !important;
+        }
+    
+
+    .popup {
+        display: none; /* Initially hide the popup */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        animation: fadeIn 1s ease; /* Add fade-in animation */
+    }
+    
+    .popup-content {
+        width: 70vw;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #414141;
+        color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .pop_txt {
+        padding: 3rem 5rem;
+    }
+    
+    .pop_txt img {
+        height: 30vh;
+        mix-blend-mode: luminosity;
+    }
+    
+    .popup-content h2 {
+        margin-right: 2rem;
+    }
+    
+    .close {
+        position: absolute;
+        z-index: 99999999;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        font-size: 30px;
+        color: #888;
+    }
+    
+    .close:hover {
+        color: #333;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+
+
+
+    
+@media screen and (max-width:1250px) {
+    .col
+{
+    width: 25vw;
+}
+.row_books
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.pop_img {
+    height: 20vh !important;
+    mix-blend-mode: luminosity;
+}
+.pop_txt
+{
+    width: 40vw;
+}
+
+
+
+}
+
+@media screen and (max-width:1010px) {
+    .popup_card
+        {
+            width: 11rem !important;
+            margin-right: 0rem !important;
+        }
+    .col
+{
+    width: 30vw;
+}
+
+.pop_img {
+    display: none;
+}
+.pop_txt p
+{
+    display: none;
+}
+.pop_txt
+{
+    width: auto;
+    text-align: center !important;
+}
+
+
+.pop_txt {
+    padding: 3rem 0rem !important;
+}
+
+.popup-content {
+    width: 70vw;
+    display: grid !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #414141;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    place-items: center !important;
+}
+#latestBookDetails
+{
+    position: relative;
+    top: -3rem;
+}
+
+.close {
+    position: absolute;
+    top: 60px !important;
+    right: 5px !important;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+}
